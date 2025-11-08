@@ -33,8 +33,9 @@ jupyter notebook
 
 Then open:
 ```
-notebooks/main_analysis.ipynb and run cell by cell.
+notebooks/main_analysis.ipynb 
 ```
+Then run cell by cell.
 
 ---
 
