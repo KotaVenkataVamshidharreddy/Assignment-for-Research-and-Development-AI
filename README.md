@@ -48,9 +48,7 @@ project_name/
 │── requirements.txt
 └── README.md
 ```
-```
 
-***
 
 
 # Parametric Curve Fitting Optimization
@@ -124,15 +122,26 @@ The best-performing method was **SHGO (Simplicial Homology Global Optimization)*
 | **$M$** | Exponential growth coefficient | **0.021389** |
 | **$X$** | Translational offset | **54.900299** |
 
+### Optimization Results (JSON)
+The detailed numerical results from all optimization methods are stored in:
+[`results/optimization_results.json`](results/optimization_results.json)
+
 ---
 
 ### 3.1. Visual Verification
 
 The plots generated confirm the high quality of the fit. The `best_fit_vs_data.png` image shows the predicted curve (in red) lying almost perfectly on top of the original data points (blue), capturing the distinct spiral/oscillating nature of the curve.
 
-![Best Fit Curve vs. Original Data](best_fit_vs_data.png)
+### Best Fit vs Original Data
+![Best Fit vs Data](results/best_fit_vs_data.png)
 
 The comparison plot, `all_approaches_vs_data.png`, further confirms that all five methods produced visually indistinguishable curves.
+
+### All Approaches Comparison
+![All Approaches vs Data](results/all_approaches_vs_data.png)
+
+### Optimization Performance Summary
+![Results Bar Chart](results/results_bar_chart.png)
 
 ### 3.2. Final Equations
 
