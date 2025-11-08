@@ -101,11 +101,21 @@ Our goal was to find the parameters $(\theta, M, X)$ that minimize this error.
 
 To ensure a robust and globally optimal solution was found, five different optimization algorithms from the `scipy.optimize` library were employed:
 
-1.  **L-BFGS-B:** A fast, local "hill-climbing" optimizer.
-2.  **SLSQP:** Another fast, local optimizer that is good with constraints.
-3.  **Basin-Hopping:** A global optimizer that "hops" between different local minima to find a better one.
-4.  **SHGO (Simplicial Homology Global Optimization):** A global optimizer designed for complex, non-linear problems.
-5.  **Differential Evolution:** A population-based global optimizer that is very robust.
+
+| **Method** | **Full Name** | **Type** | **Description** |
+|-------------|---------------|-----------|------------------|
+| **L-BFGS-B** | *Limited-memory Broyden–Fletcher–Goldfarb–Shanno algorithm (with Bounds)* | Local (Gradient-based) | A fast hill-climbing optimizer that approximates gradients efficiently. It quickly finds a nearby local minimum and supports variable bounds. |
+| **SLSQP** | *Sequential Least Squares Programming* | Local (Gradient-based) | A constraint-aware optimizer ideal for bounded or constrained problems. It’s precise and efficient for smooth objective functions. |
+| **Basin-Hopping** | *Basin-Hopping Algorithm* | Global (Hybrid) | Combines local minimization (like L-BFGS-B) with random “hopping” steps to escape local minima and explore the global landscape. |
+| **SHGO** | *Simplicial Homology Global Optimization* | Global (Deterministic) | Mathematically explores the entire search space using simplicial homology, guaranteeing discovery of the true global minimum. |
+| **Differential Evolution** | *Differential Evolution Algorithm* | Global (Population-based) | Evolves a population of candidate solutions over generations, mixing and competing them to find robust global optima. |
+
+---
+
+**Note:**  
+All optimizers were tested on the same objective function (L₁ loss).  
+Each converged to nearly identical results, confirming the optimization landscape is smooth and well-behaved.
+
 
 Running all five and comparing their results gives us high confidence. If they all converge to the same answer (as they did here), we can be certain it is the true global minimum.
 
