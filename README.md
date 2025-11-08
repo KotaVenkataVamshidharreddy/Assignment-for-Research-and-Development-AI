@@ -57,17 +57,21 @@ To ensure a robust and globally optimal solution was found, five different optim
 
 Running all five and comparing their results gives us high confidence. If they all converge to the same answer (as they did here), we can be certain it is the true global minimum.
 
-## 3. Results
+##  3. Results
 
-All five optimization methods converged to virtually the same set of parameters, with the L1 error being almost identical. This is a strong indication that we have found the true global minimum.
+All five optimization algorithms converged to nearly identical parameter values, indicating that the **global minimum** of the objective function was successfully found.
 
-The best-performing algorithm was **SHGO**, which gave the following results:
+The best-performing method was **SHGO (Simplicial Homology Global Optimization)**, which achieved the following results:
 
-* **Best L1 Error:** $37,865.09$
-* **Parameters:**
-    * $\theta \text{ (degrees)} = 28.118423^{\circ}$
-    * $M = 0.021389$
-    * $X = 54.900299$
+| Metric | Description | Value |
+|:--------|:-------------|:-------|
+| **Best L1 Error** | Total mean absolute deviation | **37,865.09** |
+| **$\theta$ (degrees)** | Optimal rotation angle | **28.118423°** |
+| **$\theta$ (radians)** | Converted value for model | **0.490759** |
+| **$M$** | Exponential growth coefficient | **0.021389** |
+| **$X$** | Translational offset | **54.900299** |
+
+---
 
 ### 3.1. Visual Verification
 
