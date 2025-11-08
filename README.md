@@ -1,5 +1,26 @@
 # Assignment-for-Research-and-Development-AI
-flam-assignment
+
+## 📚 Table of Contents
+
+- [Overview](#overview)
+- [How to Run](#how-to-run)
+  - [1. Clone the repository](#1-clone-the-repository)
+  - [2. (Optional) Create a virtual environment](#2-optional-create-a-virtual-environment)
+  - [3. Install dependencies](#3-install-dependencies)
+  - [4. Launch Jupyter Notebook](#4-launch-jupyter-notebook)
+- [Project Structure](#project-structure)
+- [Parametric Curve Fitting Optimization](#parametric-curve-fitting-optimization)
+  - [1. Problem Statement](#1-problem-statement)
+  - [2. Methodology](#2-methodology)
+    - [2.1 The "Ordered t" Assumption](#21-the-ordered-t-assumption)
+    - [2.2 Objective Function L1 Loss](#22-objective-function-l1-loss)
+    - [2.3 Optimization Strategy](#23-optimization-strategy)
+  - [3. Results](#3-results)
+    - [3.1 Visual Verification](#31-visual-verification)
+    - [3.2 Final Equations](#32-final-equations)
+    - [3.3 Desmos](#33-desmos)
+- [References](#references)
+- [Contact](#contact)
 
 
 ## Overview
