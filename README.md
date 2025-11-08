@@ -1,5 +1,58 @@
 # Assignment-for-Research-and-Development-AI
 flam-assignment
+
+
+## 📋 Overview
+This repository contains a Jupyter Notebook (`main_analysis.ipynb`) for analyzing `xy_data.csv` using Python 3.9.
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the repository
+```
+git clone https://github.com/yourusername/project_name.git
+cd project_name
+```
+
+### 2. (Optional) Create a virtual environment
+```
+python3 -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4. Launch Jupyter Notebook
+```
+jupyter notebook
+```
+
+Then open:
+```
+notebooks/main_analysis.ipynb and run cell by cell.
+```
+
+---
+
+## 📂 Project Structure
+```
+project_name/
+│── notebooks/
+│   └── main_analysis.ipynb
+│── data/
+│   └── xy_data.csv
+│── requirements.txt
+└── README.md
+```
+```
+
+***
+
+
 # Parametric Curve Fitting Optimization
 
 This repository contains the solution and methodology for finding the unknown parameters of a complex parametric curve based on a given set of `(x, y)` data points.
@@ -98,7 +151,7 @@ $$
 
 
 
-
+## 3.3 Desmos
 **Desmos Format:**
 x = t * cos(0.490759) - e^(0.021389*abs(t)) * sin(0.3*t) * sin(0.490759) + 54.900299 
 
@@ -106,3 +159,15 @@ x = t * cos(0.490759) - e^(0.021389*abs(t)) * sin(0.3*t) * sin(0.490759) + 54.90
 y = 42 + t * sin(0.490759) + e^(0.021389*abs(t)) * sin(0.3*t) * cos(0.490759)
 
 $$ x = \left(t \cdot \cos(0.490759) - e^{0.021389\left|t\right|} \cdot \sin(0.3t) \cdot \sin(0.490759) + 54.900299\right), \quad y = \left(42 + t \cdot \sin(0.490759) + e^{0.021389\left|t\right|} \cdot \sin(0.3t) \cdot \cos(0.490759)\right) $$
+
+**Desmos visualization**: https://www.desmos.com/calculator/vgdz8gnrzn
+
+
+
+## Contact
+
+**Project Maintainer**: Kota Venkata Vamshidharreddy
+- Email: kotavenkatavamshidharreddy7@gmail.com
+- GitHub: https://github.com/KotaVenkataVamshidharreddy
+
+
