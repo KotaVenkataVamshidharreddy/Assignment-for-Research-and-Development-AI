@@ -2,12 +2,12 @@
 flam-assignment
 
 
-## 📋 Overview
+## Overview
 This repository contains a Jupyter Notebook (`main_analysis.ipynb`) for analyzing `xy_data.csv` using Python 3.9.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```
@@ -38,7 +38,7 @@ notebooks/main_analysis.ipynb and run cell by cell.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 project_name/
 │── notebooks/
