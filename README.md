@@ -171,7 +171,25 @@ $$ x = \left(t \cdot \cos(0.490759) - e^{0.021389\left|t\right|} \cdot \sin(0.3t
 
 **Desmos visualization**: https://www.desmos.com/calculator/vgdz8gnrzn
 
+![Desmos Graph](results/desmos-graph.png)
 
+---
+
+## References
+
+The optimization methods used in this project are standard, well-established algorithms. The specific implementations were provided by the SciPy library, and the foundational concepts are drawn from the following key papers:
+
+1.  **SciPy (The Library Used):**
+    * Virtanen, P., Gommers,R., Oliphant, T. E., et al. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. *Nature Methods*, 17(3), 261-272.
+    * *(Citation for the scientific library that provided all the optimizer implementations.)*
+
+2.  **Differential Evolution (One of the global methods):**
+    * Storn, R., & Price, K. (1997). Differential evolution–a simple and efficient heuristic for global optimization over continuous spaces. *Journal of Global Optimization*, 11(4), 341-359.
+    * *(This is the foundational paper for the "Differential Evolution" algorithm, a key part of the global strategy.)*
+
+3.  **SHGO (The winning global method):**
+    * Endres, S. C., Sandrock, C., & Focke, W. W. (2018). A simplicial homology global optimization (SHGO) algorithm. *Journal of Global Optimization*, 72(2), 181-217.
+    * *(This is the paper for the "SHGO" algorithm, which was the best-performing method in our analysis.)*
 
 ## Contact
 
