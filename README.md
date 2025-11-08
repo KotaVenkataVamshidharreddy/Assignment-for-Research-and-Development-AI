@@ -1,6 +1,6 @@
 # Assignment-for-Research-and-Development-AI
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [How to Run](#how-to-run)
