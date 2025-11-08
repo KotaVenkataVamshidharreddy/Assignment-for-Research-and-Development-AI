@@ -82,22 +82,14 @@ The comparison plot, `all_approaches_vs_data.png`, further confirms that all fiv
 For submission, the best-fit $\theta$ value must be converted to radians:
 $\theta \text{ (radians)} = 28.118423^{\circ} \cdot \frac{\pi}{180^{\circ}} \approx 0.490759$
 
-Standard Format:
+**Standard Format:**
 
 $$
-x = t \cos(0.490759)
-  - e^{0.021389|t|}
-    \sin(0.3t)
-    \sin(0.490759)
-  + 54.900299
+x = \left(t \cdot \cos(0.490759) - e^{0.021389\left|t\right|} \cdot \sin(0.3t) \cdot \sin(0.490759) + 54.900299\right)
 $$
 
 $$
-y = 42
-  + t \sin(0.490759)
-  + e^{0.021389|t|}
-    \sin(0.3t)
-    \cos(0.490759)
+y = \left(42 + t \cdot \sin(0.490759) + e^{0.021389\left|t\right|} \cdot \sin(0.3t) \cdot \cos(0.490759)\right)
 $$
 
 
@@ -109,3 +101,4 @@ x = t * cos(0.490759) - e^(0.021389*abs(t)) * sin(0.3*t) * sin(0.490759) + 54.90
 
 y = 42 + t * sin(0.490759) + e^(0.021389*abs(t)) * sin(0.3*t) * cos(0.490759)
 
+$$ x = \left(t \cdot \cos(0.490759) - e^{0.021389\left|t\right|} \cdot \sin(0.3t) \cdot \sin(0.490759) + 54.900299\right), \quad y = \left(42 + t \cdot \sin(0.490759) + e^{0.021389\left|t\right|} \cdot \sin(0.3t) \cdot \cos(0.490759)\right) $$
